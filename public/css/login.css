@@ -1,0 +1,143 @@
+:root {
+  --background : #FFF5E0;
+  --bg-login : #730222;
+  --bg-regist : #d7d7d7;
+  --btn: #141E46;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.intro h2 {
+  font-size: 1.8rem;
+}
+.intro h3 {
+  font-size: 1.3rem;
+}
+.intro img {
+  width: 200px;
+}
+body {
+  padding: 10px;
+  height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  overflow: hidden;  
+}
+
+.wrapper {
+  display: flex;
+}
+
+.intro {
+  width: 50vw;
+  margin-top: 5%;
+}
+.login-wrapper {
+  width: 100%;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-login);
+    max-height: 495px;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 7px 7px 10px 3px #00000036;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 32px 24px 24px 24px;
+  }
+  
+  /*checkbox to switch from sign up to login*/
+  #chk {
+    display: none;
+  }
+  
+  /*Login*/
+  .login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login label {
+    margin: 25% 0 5%;
+  }
+  
+  label {
+    color: var(--bg-regist);
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+  
+  .input {
+    width: inherit;
+    height: 40px;
+    background: #e0dede;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  /*Register*/
+  .register {
+    background: var(--bg-regist);
+    border-radius: 60% / 10%;
+    transform: translateY(5%);
+    transition: .8s ease-in-out;
+  }
+  
+  .register label {
+    color: var(--bg-login);
+    transform: scale(.6);
+    margin-top: -10px;
+  }
+  
+  #chk:checked ~ .register {
+    transform: translateY(-60%);
+  }
+  
+  #chk:checked ~ .register label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+  }
+  
+  #chk:checked ~ .login label {
+    transform: scale(.6);
+    margin: 5% 0 5%;
+  }   
+  /*Button*/
+  .form button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #fff;
+    background: var(--btn);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+  }
+  
+  .form button:hover {
+    background-color: #202e6d;
+  } 

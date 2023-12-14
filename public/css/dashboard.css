@@ -1,0 +1,148 @@
+button {
+    border: 0;
+}
+.border {
+    border-radius: 10px;
+    border: 2px solid rgb(190, 189, 189);
+}
+.cart-list-wrapper {
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.cart-list {
+    background-color: whitesmoke;
+    height: 65%;
+    overflow-y: scroll;
+}
+.cart-list ul li{
+    display: flex;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product-name {
+    width: 35%;
+}
+.product-price {
+    width: 15%;
+}
+.qty-input {
+    width: 20%;
+}
+.total {
+    width: 20%;
+}
+.total input {
+    width: 100%;
+}
+
+.qty-input div {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid green;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.qty-input div input{
+    width: 35px;
+    border: 0;
+}
+
+.qty-input div button {
+    background: rgba(0, 0, 0, .3);
+}
+
+.del button {
+    width: 40px;
+    border-radius: 5px;
+    background: red;
+}
+.del button i {
+    color: white;
+}
+
+.cart-total {
+    height: 35%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgb(226, 223, 223);
+    box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.75);
+}
+
+.subtotal div:first-child,
+.subtotal,
+.action{
+    display: flex;
+}
+
+.subtotal div:first-child,
+.subtotal {
+    justify-content: space-between;
+    align-items: center;
+}
+.subtotal div:first-child {
+    width: 70%;
+}
+
+.action {
+    width: 24%;
+    flex-direction: column;
+}
+
+.reset, .co {
+    padding: 5px;
+}
+.reset {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgb(155, 225, 255);
+}
+.co {
+    background: rgb(212, 245, 163);
+}
+
+
+/* Product List */
+
+.product-list-wrapper {
+    border: 2px solid black;
+    background-color: rgb(247, 247, 247);
+    margin-top: 7px;
+    height: 67vh;
+    display: flex;
+    overflow-y: auto;
+    padding: 7px;
+}
+
+.product-list-wrapper div {
+    margin: 0 5px 5px 0;
+}
+.card {
+    height: 160px;
+    overflow: hidden;
+}
+.card-body p {
+    margin: 5px 0 0;
+    font-size: .75rem;
+}
+
+.price {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    left: 0;
+    background-color: white;
+}
